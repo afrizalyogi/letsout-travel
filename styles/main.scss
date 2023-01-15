@@ -1,0 +1,211 @@
+:root {
+	--blue-primary: #3258e8;
+	--blue-secondary: rgba(50, 88, 232, 0.1);
+	--black-primary: #232631;
+	--black-secodary: #9c9c9c;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+nav {
+	padding: 24px 0;
+}
+header,
+section {
+	margin-bottom: 120px;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+// Style Id Sort (Begin-End)
+#header-row {
+	margin-bottom: -104px;
+}
+#header-text {
+	margin-top: -104px;
+}
+#header-img {
+	width: 75%;
+	#header-img-object {
+		border-radius: 24px;
+		margin-top: -40px;
+		margin-left: 40px;
+		margin-bottom: -88px;
+		width: 100%;
+		height: 560px;
+		background-image: url(../assets/header-img.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+#search {
+	position: relative;
+	z-index: 2;
+}
+#btn-search-1 {
+	border-radius: 12px 0 0 0;
+	font-size: 18px;
+}
+#btn-search-2 {
+	margin-left: -6px;
+	border-radius: 0 12px 0 0;
+	color: var(--blue-primary);
+	font-size: 18px;
+	background-color: #fff;
+	box-shadow: inset 0px -2px 4px #f4f4f4;
+}
+#flight-content,
+#hotel-content {
+	background-color: #fff;
+	box-shadow: 0px 25px 54px #efefef;
+	border-radius: 0 12px 12px 12px;
+	padding: 28px;
+}
+
+// Style Class Sort (Begin-End)
+.navbar-brand {
+	display: flex;
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--blue-primary);
+	img {
+		height: 100%;
+		width: auto;
+	}
+}
+.navbar-collapse {
+	display: flex;
+	text-align: center;
+}
+.navbar-nav {
+	list-style: none;
+	.nav-item {
+		float: left;
+		a {
+			display: block;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 0 12px;
+			color: var(--black-secodary);
+		}
+		.active {
+			font-weight: 500;
+			color: var(--blue-primary);
+		}
+	}
+}
+.navbar-cta {
+	display: flex;
+}
+.header-title {
+	font-size: 52px;
+	font-weight: 700;
+}
+.header-subtitle {
+	width: 75%;
+}
+.search-title {
+	font-weight: 500;
+	font-size: 18px;
+}
+.service-title {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+// Reusable Style Component Sort (A-Z)
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+}
+.btn-primary {
+	background-color: var(--blue-primary);
+	color: #fff;
+}
+.btn-secondary {
+	background-color: var(--blue-secondary);
+	color: var(--blue-primary);
+}
+.card {
+	background-color: #fafafa;
+	border-radius: 24px;
+	padding: 40px;
+}
+.col {
+	flex: auto;
+}
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
+	align-items: center;
+}
+.d-flex {
+	display: flex;
+}
+.float-right {
+	float: right;
+}
+.justify-content-space-between {
+	justify-content: space-between;
+}
+.mb-5 {
+	margin-bottom: 5%;
+}
+.me-auto {
+	margin-right: auto;
+}
+.ms-auto {
+	margin-left: auto;
+}
+.row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	gap: 2%;
+}
+.section-subtitle {
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--blue-primary);
+}
+.section-title {
+	font-weight: 600;
+	font-size: 36px;
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
