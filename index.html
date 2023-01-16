@@ -75,55 +75,50 @@
 							<div id="header-img-object"></div>
 						</div>
 					</div>
-					<!-- Search card -->
-					<div id="search">
-						<button id="btn-search-1" class="btn btn-primary">Flight</button>
-						<button id="btn-search-2" class="btn">Hotel</button>
-						<div id="flight-content">
-							<div class="row">
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="assets/icon-loc.png" alt="" />
-										</div>
-										<div class="col">
-											<p class="search-title">NTB, Lombok</p>
-											<p class="search-subtitle">Select the locations</p>
-										</div>
+				</div>
+				<!-- Search card -->
+				<div id="search">
+					<button id="btn-search-1" class="btn btn-primary">Flight</button>
+					<button id="btn-search-2" class="btn">Hotel</button>
+					<div id="flight-content">
+						<div class="row text-center">
+							<div class="col">
+								<div class="d-inline-flex">
+									<img src="assets/icon-loc.png" alt="" />
+									<div class="d-block text-left">
+										<p class="search-title">NTB, Lombok</p>
+										<p class="search-subtitle">Select the locations</p>
 									</div>
 								</div>
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="assets/icon-cal.png" alt="" />
-										</div>
-										<div class="col">
-											<p class="search-title">9 Juni 2022</p>
-											<p class="search-subtitle">Choose flight date</p>
-										</div>
+							</div>
+							<div class="col">
+								<div class="d-inline-flex">
+									<img src="assets/icon-cal.png" alt="" />
+									<div class="d-block text-left">
+										<p class="search-title">9 Juni 2022</p>
+										<p class="search-subtitle">Choose flight date</p>
 									</div>
 								</div>
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="assets/icon-seat.png" alt="" />
-										</div>
-										<div class="col">
-											<p class="search-title">Economy</p>
-											<p class="search-subtitle">Choose flight type</p>
-										</div>
+							</div>
+							<div class="col">
+								<div class="d-inline-flex">
+									<img src="assets/icon-seat.png" alt="" />
+									<div class="d-block text-left">
+										<p class="search-title">Economy</p>
+										<p class="search-subtitle">Choose flight type</p>
 									</div>
 								</div>
-								<div class="col">
-									<a href="#" class="btn btn-primary">
-										<img src="assets/icon-search.png" alt="" />
-										Search Flight
-									</a>
-								</div>
+							</div>
+							<div class="col">
+								<a href="#" class="btn btn-primary">
+									<img src="assets/icon-search.png" alt="" />
+									Search Flight
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- End of Search card -->
 			</div>
 		</header>
 		<!-- End of Header -->
@@ -133,18 +128,16 @@
 			<div class="container">
 				<div class="card">
 					<div class="row">
-						<div class="col">
+						<div id="service-title" class="col">
 							<p class="section-subtitle">Our Service</p>
 							<p class="section-title">We Offer Best Service</p>
 						</div>
-						<div class="col">
+						<div id="service-content" class="col">
 							<div class="row">
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="" alt="" />
-										</div>
-										<div class="col">
+								<div id="service-content-1" class="col">
+									<div class="d-inline-flex">
+										<img src="assets/service-1.png" alt="" />
+										<div class="d-block">
 											<p class="service-title">Calculated Weather</p>
 											<p class="service-subtitle">
 												A new way to travel by air the easy and fast way.
@@ -152,12 +145,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="" alt="" />
-										</div>
-										<div class="col">
+								<div id="service-content-2" class="col">
+									<div class="d-inline-flex">
+										<img src="assets/service-2.png" alt="" />
+										<div class="d-block">
 											<p class="service-title">Best Experience Flight</p>
 											<p class="service-subtitle">
 												A new way to travel by air the easy and fast way.
@@ -165,12 +156,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="" alt="" />
-										</div>
-										<div class="col">
+							</div>
+							<div class="row">
+								<div id="service-content-3" class="col">
+									<div class="d-inline-flex">
+										<img src="assets/service-3.png" alt="" />
+										<div class="d-block">
 											<p class="service-title">Best Place to Stay</p>
 											<p class="service-subtitle">
 												A new way to travel by air the easy and fast way.
@@ -178,12 +169,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="col">
-									<div class="row">
-										<div class="col">
-											<img src="" alt="" />
-										</div>
-										<div class="col">
+								<div id="service-content-4" class="col">
+									<div class="d-inline-flex">
+										<img src="assets/service-4.png" alt="" />
+										<div class="d-block">
 											<p class="service-title">Easy-To-Use</p>
 											<p class="service-subtitle">
 												A new way to travel by air the easy and fast way.
@@ -197,5 +186,275 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of Service Section -->
+
+		<!-- Packages -->
+		<section id="packages">
+			<div class="container">
+				<form action="">
+					<div class="row">
+						<div class="col d-inline-flex">
+							<input
+								type="checkbox"
+								name="package-select"
+								id="image-select-1"
+								class="image-select"
+								onclick="onlyOne(this)" />
+							<label for="image-select-1">
+								<img src="assets/package-1.png" alt="" />
+							</label>
+							<input
+								type="checkbox"
+								name="package-select"
+								id="image-select-2"
+								class="image-select ms-auto"
+								onclick="onlyOne(this)" />
+							<label for="image-select-2"
+								><img src="assets/package-2.png" alt=""
+							/></label>
+						</div>
+						<div class="col">
+							<div id="packages-title" class="col">
+								<p class="section-subtitle">Our Package</p>
+								<p class="section-title">Popular Trip Packages</p>
+								<p class="section-paragraph">
+									A new way to travel by air the easy and fast way. Try it now
+									by filling out the form below!
+								</p>
+								<div id="packages-detail" class="row">
+									<div class="col">
+										<p class="packages-detail-title">120+</p>
+										<p class="packages-detail-subtitle">Destination</p>
+									</div>
+									<div class="col">
+										<p class="packages-detail-title">560+</p>
+										<p class="packages-detail-subtitle">Luxury Hotels</p>
+									</div>
+									<div class="col">
+										<p class="packages-detail-title">135K+</p>
+										<p class="packages-detail-subtitle">Happy Tourists</p>
+									</div>
+								</div>
+								<div class="d-inline-flex">
+									<button href="#" class="btn btn-primary">
+										Choose Package
+									</button>
+									<button href="#" class="btn btn-other">View More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- End of Packages Section -->
+
+		<!-- Destinations -->
+		<section id="destinations">
+			<div class="container">
+				<div id="destinations-text">
+					<p class="section-title text-center">Explore Natural Destinations</p>
+					<p class="section-paragraph text-center">
+						A new way to travel by air the easy and fast way.<br />
+						Try it now by filling out the form below!
+					</p>
+				</div>
+				<div id="destinations-content">
+					<div class="row">
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-1.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Waterfall Haven</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Selajan, Iceland
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$9</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-2.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Greatest Mountain</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Wildsee, Italy
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$12</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-3.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Coconut Tree River</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Lombok, Indonesia
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$6</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-4.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Circle Beach Play</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Lombok, Indonesia
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$5</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-1.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Waterfall Haven</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Selajan, Iceland
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$9</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-2.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Greatest Mountain</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Wildsee, Italy
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$12</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-3.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Coconut Tree River</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Lombok, Indonesia
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$6</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img
+									class="destination-img"
+									src="assets/destination-4.png"
+									alt="" />
+								<div class="destination-text">
+									<p class="destination-title">Circle Beach Play</p>
+									<p class="destination-subtitle">
+										<img src="assets/icon-loc-solid.png" alt="" />
+										Lombok, Indonesia
+									</p>
+									<div
+										class="d-flex align-items-center justify-content-space-between">
+										<p class="destination-price">
+											<b>$5</b>
+											/person
+										</p>
+										<a href="#" class="btn btn-primary">Book</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-other border-rounded-other d-flex text-center">
+						View More
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- End of Destinations -->
+
+		<!-- Custom scripts for this pages -->
+		<script src="scripts/main.js"></script>
 	</body>
 </html>
