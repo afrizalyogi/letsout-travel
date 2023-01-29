@@ -27,7 +27,6 @@
 					<img src="assets/logo.png" alt="" />
 					LetsOut
 				</a>
-				<div class="navbar-toggler"></div>
 				<!-- Navbar items -->
 				<div class="navbar-collapse ms-auto me-auto">
 					<ul class="navbar-nav">
@@ -53,6 +52,13 @@
 						<a href="#" class="btn btn-secondary">My Account</a>
 					</div>
 				</div>
+				<div class="navbar-toggler">
+					<label for="" class="nav-check"></label>
+				</div>
+				<input type="checkbox" name="navbar-check" id="navbar-check" />
+				<label for="navbar-check" class="navbar-toggler">
+					<img src="assets/icon-hamburger.png" alt="" />
+				</label>
 			</div>
 		</nav>
 		<!-- End of Navbar -->
@@ -209,9 +215,9 @@
 								id="image-select-2"
 								class="image-select ms-auto"
 								onclick="onlyOne(this)" />
-							<label for="image-select-2"
-								><img src="assets/package-2.png" alt=""
-							/></label>
+							<label for="image-select-2">
+								<img src="assets/package-2.png" alt="" />
+							</label>
 						</div>
 						<div class="col">
 							<div id="packages-title" class="col">
@@ -357,18 +363,18 @@
 							<div class="card">
 								<img
 									class="destination-img"
-									src="assets/destination-1.png"
+									src="assets/destination-5.png"
 									alt="" />
 								<div class="destination-text">
-									<p class="destination-title">Waterfall Haven</p>
+									<p class="destination-title">High Ground</p>
 									<p class="destination-subtitle">
 										<img src="assets/icon-loc-solid.png" alt="" />
-										Selajan, Iceland
+										Bali, Indonesia
 									</p>
 									<div
 										class="d-flex align-items-center justify-content-space-between">
 										<p class="destination-price">
-											<b>$9</b>
+											<b>$49</b>
 											/person
 										</p>
 										<a href="#" class="btn btn-primary">Book</a>
@@ -380,18 +386,18 @@
 							<div class="card">
 								<img
 									class="destination-img"
-									src="assets/destination-2.png"
+									src="assets/destination-6.png"
 									alt="" />
 								<div class="destination-text">
-									<p class="destination-title">Greatest Mountain</p>
+									<p class="destination-title">Dinosaur Land</p>
 									<p class="destination-subtitle">
 										<img src="assets/icon-loc-solid.png" alt="" />
-										Wildsee, Italy
+										Bali, Indonesia
 									</p>
 									<div
 										class="d-flex align-items-center justify-content-space-between">
 										<p class="destination-price">
-											<b>$12</b>
+											<b>$5</b>
 											/person
 										</p>
 										<a href="#" class="btn btn-primary">Book</a>
@@ -403,18 +409,18 @@
 							<div class="card">
 								<img
 									class="destination-img"
-									src="assets/destination-3.png"
+									src="assets/destination-7.png"
 									alt="" />
 								<div class="destination-text">
-									<p class="destination-title">Coconut Tree River</p>
+									<p class="destination-title">Turttle Land</p>
 									<p class="destination-subtitle">
 										<img src="assets/icon-loc-solid.png" alt="" />
-										Lombok, Indonesia
+										Bali, Indonesia
 									</p>
 									<div
 										class="d-flex align-items-center justify-content-space-between">
 										<p class="destination-price">
-											<b>$6</b>
+											<b>$5</b>
 											/person
 										</p>
 										<a href="#" class="btn btn-primary">Book</a>
@@ -426,13 +432,13 @@
 							<div class="card">
 								<img
 									class="destination-img"
-									src="assets/destination-4.png"
+									src="assets/destination-8.png"
 									alt="" />
 								<div class="destination-text">
-									<p class="destination-title">Circle Beach Play</p>
+									<p class="destination-title">The Cliffside Beach</p>
 									<p class="destination-subtitle">
 										<img src="assets/icon-loc-solid.png" alt="" />
-										Lombok, Indonesia
+										Bali, Indonesia
 									</p>
 									<div
 										class="d-flex align-items-center justify-content-space-between">
@@ -453,6 +459,111 @@
 			</div>
 		</section>
 		<!-- End of Destinations -->
+
+		<!-- Call To Action -->
+		<section id="cta">
+			<div class="container">
+				<div id="love">
+					<div class="card">
+						<img src="assets/icon-love.png" alt="" />
+					</div>
+				</div>
+				<div id="cta-card" class="card text-center">
+					<div class="section-subtitle">New User</div>
+					<div class="section-title">
+						Dont Miss The 50% Discount If You Register Today
+					</div>
+					<div class="section-paragraph">
+						Let's maximize your next holiday with us with the best experience.
+					</div>
+					<a href="" class="btn btn-primary">Register Account</a>
+				</div>
+				<div id="testimonial">
+					<div class="card">
+						<img src="assets/5-stars.png" alt="" />
+						<p class="testimonial-text">
+							Thank you for helping my vacation. Amazing!
+						</p>
+						<div class="d-inline-flex">
+							<img
+								class="testimonial-img"
+								src="assets/testimonial-1.png"
+								alt="" />
+							<div class="d-block">
+								<p class="testimonial-name">Sova Nerds</p>
+								<p class="testimonial-job">Backpacker</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End of Call To Action -->
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col footer-brand">
+						<a href="#">
+							<img src="assets/logo-white.png" alt="" />
+							<p class="footer-brand">LetsOut</p>
+						</a>
+						<p>Copyright © 2022.<br />All Rights Reserved.</p>
+					</div>
+					<div class="col">
+						<p class="footer-link-title">Page Menus</p>
+						<ul>
+							<li class="footer-link">
+								<a href="#">Home</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">About Us</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Contact Us</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">My Account</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer-link-title">Our Product</p>
+						<ul>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Booking Flight</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Booking Hotels</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Trip Packages</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer-link-title">Social Media</p>
+						<ul>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Twitter</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Tiktok</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Facebook</a>
+							</li>
+							<li class="footer-link">
+								<a class="footer-link" href="#">Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>
+		</footer>
+		<!-- End of Footer -->
 
 		<!-- Custom scripts for this pages -->
 		<script src="scripts/main.js"></script>
