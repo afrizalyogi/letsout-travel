@@ -220,8 +220,12 @@ p {
 	input.image-select[type="checkbox"] + label {
 		display: flex;
 		justify-content: center;
+		cursor: pointer;
 		width: 90%;
-		transition: 0.3s;
+		transition: 300ms;
+	}
+	input.image-select[type="checkbox"] + label:hover {
+		transform: scale(110%);
 	}
 	input.image-select[type="checkbox"]:checked + label {
 		border: solid 4px var(--blue-primary);
@@ -264,7 +268,7 @@ p {
 			margin-bottom: 30px;
 			.col {
 				margin-bottom: 30px;
-				min-width: 250px;
+				min-width: 230px;
 			}
 		}
 	}
@@ -372,6 +376,9 @@ p {
 	border: none;
 	border-radius: 12px;
 	cursor: pointer;
+}
+.btn:hover {
+	opacity: 80%;
 }
 .btn-primary {
 	background-color: var(--blue-primary);
@@ -758,11 +765,30 @@ p {
 					margin-bottom: 24px;
 				}
 			}
+			.d-inline-flex {
+				display: block;
+				.btn {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 60%;
+				}
+				.btn-primary {
+					margin-bottom: 12px;
+				}
+			}
 		}
 	}
 	#destinations {
 		#destinations-text {
 			margin-bottom: 48px;
+		}
+		#destinations-content {
+			.row {
+				.col {
+					min-width: 48%;
+				}
+			}
 		}
 		.card {
 			border-radius: 24px;

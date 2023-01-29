@@ -222,8 +222,12 @@ p {
 #packages input.image-select[type=checkbox] + label {
   display: flex;
   justify-content: center;
+  cursor: pointer;
   width: 90%;
-  transition: 0.3s;
+  transition: 300ms;
+}
+#packages input.image-select[type=checkbox] + label:hover {
+  transform: scale(110%);
 }
 #packages input.image-select[type=checkbox]:checked + label {
   border: solid 4px var(--blue-primary);
@@ -261,7 +265,7 @@ p {
 }
 #destinations #destinations-content .row .col {
   margin-bottom: 30px;
-  min-width: 250px;
+  min-width: 230px;
 }
 #destinations .card {
   background-color: #fff;
@@ -363,6 +367,10 @@ p {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 80%;
 }
 
 .btn-primary {
@@ -706,8 +714,23 @@ section {
   #packages #packages-title #packages-detail .col {
     margin-bottom: 24px;
   }
+  #packages #packages-title .d-inline-flex {
+    display: block;
+  }
+  #packages #packages-title .d-inline-flex .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  #packages #packages-title .d-inline-flex .btn-primary {
+    margin-bottom: 12px;
+  }
   #destinations #destinations-text {
     margin-bottom: 48px;
+  }
+  #destinations #destinations-content .row .col {
+    min-width: 48%;
   }
   #destinations .card {
     border-radius: 24px;
