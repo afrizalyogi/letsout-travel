@@ -12,6 +12,7 @@
 body {
 	font-family: "Poppins", sans-serif;
 	color: var(--black-primary);
+	min-width: 268px;
 }
 nav {
 	padding: 24px 0;
@@ -164,7 +165,7 @@ p {
 	#hotel-content {
 		background-color: #fff;
 		box-shadow: 0px 25px 54px #efefef;
-		border-radius: 0 12px 12px 12px;
+		border-radius: 0 0 12px 12px;
 		padding: 28px;
 		.d-block {
 			margin-left: 16px;
@@ -220,8 +221,12 @@ p {
 	input.image-select[type="checkbox"] + label {
 		display: flex;
 		justify-content: center;
+		cursor: pointer;
 		width: 90%;
-		transition: 0.3s;
+		transition: 300ms;
+	}
+	input.image-select[type="checkbox"] + label:hover {
+		transform: scale(110%);
 	}
 	input.image-select[type="checkbox"]:checked + label {
 		border: solid 4px var(--blue-primary);
@@ -257,14 +262,19 @@ p {
 }
 #destinations {
 	#destinations-text {
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 60px;
+		.section-paragraph {
+			width: 35%;
+		}
 	}
 	#destinations-content {
 		.row {
 			margin-bottom: 30px;
 			.col {
 				margin-bottom: 30px;
-				min-width: 250px;
+				min-width: 230px;
 			}
 		}
 	}
@@ -372,6 +382,9 @@ p {
 	border: none;
 	border-radius: 12px;
 	cursor: pointer;
+}
+.btn:hover {
+	filter: contrast(110%);
 }
 .btn-primary {
 	background-color: var(--blue-primary);
@@ -704,9 +717,7 @@ p {
 			.col {
 				display: flex;
 				justify-content: flex-start;
-			}
-			.d-block {
-				.search-subtitle {
+				.d-inline-flex {
 					margin-bottom: 24px;
 				}
 			}
@@ -758,11 +769,33 @@ p {
 					margin-bottom: 24px;
 				}
 			}
+			.d-inline-flex {
+				display: block;
+				.btn {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 60%;
+				}
+				.btn-primary {
+					margin-bottom: 12px;
+				}
+			}
 		}
 	}
 	#destinations {
 		#destinations-text {
 			margin-bottom: 48px;
+			.section-paragraph {
+				width: 60%;
+			}
+		}
+		#destinations-content {
+			.row {
+				.col {
+					min-width: 48%;
+				}
+			}
 		}
 		.card {
 			border-radius: 24px;
@@ -850,8 +883,343 @@ p {
 
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+	nav {
+		padding: 16px 24px;
+		.navbar-brand {
+			font-size: 20px;
+		}
+		.navbar-toggler {
+			img {
+				height: 42px;
+			}
+		}
+	}
+	header,
+	section {
+		margin-bottom: 124px;
+	}
+	header {
+		padding-top: 124px;
+		#header-text {
+			.header-title {
+				font-size: 52px;
+				line-height: 64px;
+			}
+			.header-subtitle {
+				width: 84%;
+			}
+		}
+	}
+	footer {
+		padding: 84px 52px;
+		.col {
+			min-width: 100%;
+		}
+		.footer-link {
+			margin-bottom: 14px;
+		}
+	}
+
+	// Style Id Sort (Begin-End)
+	#search {
+		padding: 40px;
+		margin-top: -320px;
+		margin-bottom: -84px;
+	}
+	#service {
+		margin-bottom: 64px;
+		.card {
+			#service-title {
+				max-width: 100%;
+			}
+			#service-content {
+				.row {
+					.col {
+						min-width: 100%;
+						margin-bottom: 60px;
+						.d-block {
+							margin-left: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#packages {
+		#packages-title {
+			.packages-detail-title {
+				font-size: 24px;
+			}
+			.d-inline-flex {
+				.btn {
+					width: 80%;
+				}
+			}
+		}
+	}
+	#destinations {
+		#destinations-text {
+			width: 80%;
+			.section-paragraph {
+				width: 90%;
+			}
+		}
+		#destinations-content {
+			.row {
+				margin-bottom: 30px;
+				.col {
+					padding-left: 12%;
+					padding-right: 12%;
+					margin-bottom: 48px;
+					min-width: 50%;
+				}
+			}
+		}
+	}
+	#cta {
+		margin-bottom: 0;
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#cta-card {
+			padding: 48px 48px 104px 48px;
+			border-radius: 0;
+			.section-title {
+				width: 100%;
+				line-height: 48px;
+			}
+			.section-paragraph {
+				margin-bottom: 280px;
+				width: 70%;
+			}
+		}
+		#love {
+			display: none;
+		}
+		#testimonial {
+			margin-bottom: 0;
+			.card {
+				width: 50%;
+				margin-top: -48px;
+				margin-left: auto;
+				margin-right: auto;
+				transform: translateY(-164%);
+				.testimonial-text {
+					font-size: 18px;
+				}
+				.testimonial-name {
+					font-size: 18px;
+				}
+				.testimonial-job {
+					font-size: 16px;
+				}
+			}
+		}
+	}
 }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+	nav {
+		.navbar-brand {
+			font-size: 16px;
+			img {
+				height: 24px;
+			}
+		}
+		.navbar-toggler {
+			img {
+				height: 36px;
+			}
+		}
+	}
+	header,
+	section {
+		margin-bottom: 84px;
+	}
+	header {
+		padding-top: 84px;
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#header-text {
+			.header-title {
+				font-size: 32px;
+				line-height: 42px;
+			}
+			.header-title,
+			.header-subtitle {
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+		}
+		#header-img {
+			#header-img-object {
+				border-radius: 0;
+				height: 320px;
+			}
+		}
+	}
+	footer {
+		padding: 72px 24px;
+		.footer-brand {
+			a {
+				img {
+					height: 24px;
+					margin-right: 8px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+		.footer-link-title {
+			font-size: 16px;
+		}
+		.footer-link {
+			font-size: 14px;
+		}
+	}
+	p {
+		font-size: 12px;
+	}
+
+	// Style Id Sort (Begin-End)
+	#search {
+		padding: 6%;
+		margin-bottom: 84px;
+		#btn-search-1,
+		#btn-search-2 {
+			font-size: 14px;
+		}
+		#flight-content,
+		#hotel-content {
+			padding: 24px;
+			.d-block {
+				margin-left: 14px;
+				.search-title {
+					font-size: 14px;
+				}
+				.search-subtitle {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	#service {
+		.card {
+			padding: 0 6%;
+			#service-content {
+				.row {
+					.col {
+						.d-inline-flex {
+							display: block;
+							text-align: center;
+							.d-block {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+				.service-title {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	#packages {
+		input.image-select[type="checkbox"] + label {
+			display: block;
+			width: 100%;
+		}
+		input.image-select[type="checkbox"]:checked + label {
+			padding-top: 6%;
+			padding-bottom: 4%;
+			transform: scale(85%);
+		}
+		#packages-title {
+			.packages-detail-title {
+				font-size: 20px;
+			}
+			.d-inline-flex {
+				.btn-primary {
+					margin-bottom: 0;
+				}
+			}
+			.section-paragraph {
+				width: 80%;
+			}
+		}
+	}
+	#destinations {
+		.card {
+			.destination-text {
+				padding: 12px;
+			}
+			.destination-title {
+				font-size: 16px;
+			}
+			.destination-subtitle,
+			.destination-price {
+				font-size: 12px;
+			}
+		}
+	}
+	#cta {
+		#cta-card {
+			padding-top: 48px;
+			padding-bottom: 104px;
+			.section-title {
+				width: 100%;
+				line-height: 36px;
+			}
+			.section-paragraph {
+				font-size: 12px;
+				line-height: auto;
+				margin-bottom: 280px;
+				width: 80%;
+			}
+		}
+		#testimonial {
+			.card {
+				width: 70%;
+				transform: translateY(-160%);
+				.testimonial-text {
+					font-size: 16px;
+				}
+				.testimonial-name {
+					font-size: 16px;
+				}
+				.testimonial-job {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	// Reusable Style Component Sort (A-Z)
+	.btn {
+		padding: 12px 24px;
+		font-size: 14px;
+	}
+	.container {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.section-subtitle {
+		font-size: 12px;
+	}
+	.section-title {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 24px;
+	}
+	.section-paragraph {
+		width: 80%;
+		line-height: 20px;
+	}
 }

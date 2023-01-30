@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--black-primary);
+  min-width: 268px;
 }
 
 nav {
@@ -171,7 +172,7 @@ p {
 #search #hotel-content {
   background-color: #fff;
   box-shadow: 0px 25px 54px #efefef;
-  border-radius: 0 12px 12px 12px;
+  border-radius: 0 0 12px 12px;
   padding: 28px;
 }
 #search #flight-content .d-block,
@@ -222,8 +223,12 @@ p {
 #packages input.image-select[type=checkbox] + label {
   display: flex;
   justify-content: center;
+  cursor: pointer;
   width: 90%;
-  transition: 0.3s;
+  transition: 300ms;
+}
+#packages input.image-select[type=checkbox] + label:hover {
+  transform: scale(110%);
 }
 #packages input.image-select[type=checkbox]:checked + label {
   border: solid 4px var(--blue-primary);
@@ -254,14 +259,19 @@ p {
 }
 
 #destinations #destinations-text {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
+}
+#destinations #destinations-text .section-paragraph {
+  width: 35%;
 }
 #destinations #destinations-content .row {
   margin-bottom: 30px;
 }
 #destinations #destinations-content .row .col {
   margin-bottom: 30px;
-  min-width: 250px;
+  min-width: 230px;
 }
 #destinations .card {
   background-color: #fff;
@@ -363,6 +373,10 @@ p {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.btn:hover {
+  filter: contrast(110%);
 }
 
 .btn-primary {
@@ -661,8 +675,8 @@ section {
     display: flex;
     justify-content: flex-start;
   }
-  #search #flight-content .d-block .search-subtitle,
-#search #hotel-content .d-block .search-subtitle {
+  #search #flight-content .col .d-inline-flex,
+#search #hotel-content .col .d-inline-flex {
     margin-bottom: 24px;
   }
   #search #flight-content .btn,
@@ -706,8 +720,26 @@ section {
   #packages #packages-title #packages-detail .col {
     margin-bottom: 24px;
   }
+  #packages #packages-title .d-inline-flex {
+    display: block;
+  }
+  #packages #packages-title .d-inline-flex .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  #packages #packages-title .d-inline-flex .btn-primary {
+    margin-bottom: 12px;
+  }
   #destinations #destinations-text {
     margin-bottom: 48px;
+  }
+  #destinations #destinations-text .section-paragraph {
+    width: 60%;
+  }
+  #destinations #destinations-content .row .col {
+    min-width: 48%;
   }
   #destinations .card {
     border-radius: 24px;
@@ -781,5 +813,287 @@ section {
   .container {
     padding-left: 6%;
     padding-right: 6%;
+  }
+}
+@media (max-width: 767.98px) {
+  nav {
+    padding: 16px 24px;
+  }
+  nav .navbar-brand {
+    font-size: 20px;
+  }
+  nav .navbar-toggler img {
+    height: 42px;
+  }
+  header,
+section {
+    margin-bottom: 124px;
+  }
+  header {
+    padding-top: 124px;
+  }
+  header #header-text .header-title {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  header #header-text .header-subtitle {
+    width: 84%;
+  }
+  footer {
+    padding: 84px 52px;
+  }
+  footer .col {
+    min-width: 100%;
+  }
+  footer .footer-link {
+    margin-bottom: 14px;
+  }
+  #search {
+    padding: 40px;
+    margin-top: -320px;
+    margin-bottom: -84px;
+  }
+  #service {
+    margin-bottom: 64px;
+  }
+  #service .card #service-title {
+    max-width: 100%;
+  }
+  #service .card #service-content .row .col {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  #service .card #service-content .row .col .d-block {
+    margin-left: 30px;
+  }
+  #packages #packages-title .packages-detail-title {
+    font-size: 24px;
+  }
+  #packages #packages-title .d-inline-flex .btn {
+    width: 80%;
+  }
+  #destinations #destinations-text {
+    width: 80%;
+  }
+  #destinations #destinations-text .section-paragraph {
+    width: 90%;
+  }
+  #destinations #destinations-content .row {
+    margin-bottom: 30px;
+  }
+  #destinations #destinations-content .row .col {
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 48px;
+    min-width: 50%;
+  }
+  #cta {
+    margin-bottom: 0;
+  }
+  #cta .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cta #cta-card {
+    padding: 48px 48px 104px 48px;
+    border-radius: 0;
+  }
+  #cta #cta-card .section-title {
+    width: 100%;
+    line-height: 48px;
+  }
+  #cta #cta-card .section-paragraph {
+    margin-bottom: 280px;
+    width: 70%;
+  }
+  #cta #love {
+    display: none;
+  }
+  #cta #testimonial {
+    margin-bottom: 0;
+  }
+  #cta #testimonial .card {
+    width: 50%;
+    margin-top: -48px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-164%);
+  }
+  #cta #testimonial .card .testimonial-text {
+    font-size: 18px;
+  }
+  #cta #testimonial .card .testimonial-name {
+    font-size: 18px;
+  }
+  #cta #testimonial .card .testimonial-job {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  nav .navbar-brand {
+    font-size: 16px;
+  }
+  nav .navbar-brand img {
+    height: 24px;
+  }
+  nav .navbar-toggler img {
+    height: 36px;
+  }
+  header,
+section {
+    margin-bottom: 84px;
+  }
+  header {
+    padding-top: 84px;
+  }
+  header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header #header-text .header-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  header #header-text .header-title,
+header #header-text .header-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  header #header-img #header-img-object {
+    border-radius: 0;
+    height: 320px;
+  }
+  footer {
+    padding: 72px 24px;
+  }
+  footer .footer-brand a img {
+    height: 24px;
+    margin-right: 8px;
+  }
+  footer .footer-brand a p {
+    font-size: 16px;
+  }
+  footer .footer-link-title {
+    font-size: 16px;
+  }
+  footer .footer-link {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #search {
+    padding: 6%;
+    margin-bottom: 84px;
+  }
+  #search #btn-search-1,
+#search #btn-search-2 {
+    font-size: 14px;
+  }
+  #search #flight-content,
+#search #hotel-content {
+    padding: 24px;
+  }
+  #search #flight-content .d-block,
+#search #hotel-content .d-block {
+    margin-left: 14px;
+  }
+  #search #flight-content .d-block .search-title,
+#search #hotel-content .d-block .search-title {
+    font-size: 14px;
+  }
+  #search #flight-content .d-block .search-subtitle,
+#search #hotel-content .d-block .search-subtitle {
+    font-size: 12px;
+  }
+  #service .card {
+    padding: 0 6%;
+  }
+  #service .card #service-content .row .col .d-inline-flex {
+    display: block;
+    text-align: center;
+  }
+  #service .card #service-content .row .col .d-inline-flex .d-block {
+    margin-left: 0;
+  }
+  #service .card #service-content .service-title {
+    font-size: 16px;
+  }
+  #packages input.image-select[type=checkbox] + label {
+    display: block;
+    width: 100%;
+  }
+  #packages input.image-select[type=checkbox]:checked + label {
+    padding-top: 6%;
+    padding-bottom: 4%;
+    transform: scale(85%);
+  }
+  #packages #packages-title .packages-detail-title {
+    font-size: 20px;
+  }
+  #packages #packages-title .d-inline-flex .btn-primary {
+    margin-bottom: 0;
+  }
+  #packages #packages-title .section-paragraph {
+    width: 80%;
+  }
+  #destinations .card .destination-text {
+    padding: 12px;
+  }
+  #destinations .card .destination-title {
+    font-size: 16px;
+  }
+  #destinations .card .destination-subtitle,
+#destinations .card .destination-price {
+    font-size: 12px;
+  }
+  #cta #cta-card {
+    padding-top: 48px;
+    padding-bottom: 104px;
+  }
+  #cta #cta-card .section-title {
+    width: 100%;
+    line-height: 36px;
+  }
+  #cta #cta-card .section-paragraph {
+    font-size: 12px;
+    line-height: auto;
+    margin-bottom: 280px;
+    width: 80%;
+  }
+  #cta #testimonial .card {
+    width: 70%;
+    transform: translateY(-160%);
+  }
+  #cta #testimonial .card .testimonial-text {
+    font-size: 16px;
+  }
+  #cta #testimonial .card .testimonial-name {
+    font-size: 16px;
+  }
+  #cta #testimonial .card .testimonial-job {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .section-subtitle {
+    font-size: 12px;
+  }
+  .section-title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+  .section-paragraph {
+    width: 80%;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
