@@ -171,7 +171,7 @@ p {
 #search #hotel-content {
   background-color: #fff;
   box-shadow: 0px 25px 54px #efefef;
-  border-radius: 0 12px 12px 12px;
+  border-radius: 0 0 12px 12px;
   padding: 28px;
 }
 #search #flight-content .d-block,
@@ -370,7 +370,7 @@ p {
 }
 
 .btn:hover {
-  opacity: 80%;
+  filter: contrast(110%);
 }
 
 .btn-primary {
@@ -804,5 +804,118 @@ section {
   .container {
     padding-left: 6%;
     padding-right: 6%;
+  }
+}
+@media (max-width: 767.98px) {
+  nav {
+    padding: 16px 24px;
+  }
+  nav .navbar-brand {
+    font-size: 20px;
+  }
+  nav .navbar-toggler img {
+    height: 42px;
+  }
+  header,
+section {
+    margin-bottom: 124px;
+  }
+  header {
+    padding-top: 124px;
+  }
+  header #header-text .header-title {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  header #header-text .header-subtitle {
+    width: 84%;
+  }
+  footer {
+    padding: 84px 52px;
+  }
+  footer .col {
+    min-width: 100%;
+  }
+  footer .footer-link {
+    margin-bottom: 14px;
+  }
+  #search {
+    padding: 40px;
+    margin-top: -320px;
+    margin-bottom: -84px;
+  }
+  #service {
+    margin-bottom: 64px;
+  }
+  #service .card #service-title {
+    max-width: 100%;
+  }
+  #service .card #service-content .row .col {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  #service .card #service-content .row .col .d-block {
+    margin-left: 30px;
+  }
+  #packages #packages-title .packages-detail-title {
+    font-size: 24px;
+  }
+  #packages #packages-title .d-inline-flex .btn {
+    width: 80%;
+  }
+  #destinations #destinations-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #destinations #destinations-content .row {
+    margin-bottom: 30px;
+  }
+  #destinations #destinations-content .row .col {
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 48px;
+    min-width: 50%;
+  }
+  #cta {
+    margin-bottom: 0;
+  }
+  #cta .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cta #cta-card {
+    padding: 48px 48px 104px 48px;
+    border-radius: 0;
+  }
+  #cta #cta-card .section-title {
+    width: 100%;
+    line-height: 48px;
+  }
+  #cta #cta-card .section-paragraph {
+    margin-bottom: 280px;
+    width: 70%;
+  }
+  #cta #love {
+    display: none;
+  }
+  #cta #testimonial {
+    margin-bottom: 0;
+  }
+  #cta #testimonial .card {
+    width: 50%;
+    margin-top: -48px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, -164%);
+  }
+  #cta #testimonial .card .testimonial-text {
+    font-size: 18px;
+  }
+  #cta #testimonial .card .testimonial-name {
+    font-size: 18px;
+  }
+  #cta #testimonial .card .testimonial-job {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
