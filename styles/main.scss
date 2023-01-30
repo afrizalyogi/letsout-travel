@@ -1112,6 +1112,11 @@ p {
 	#service {
 		.card {
 			padding: 0 6%;
+			.row {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 			#service-content {
 				.row {
 					.col {
@@ -1131,9 +1136,21 @@ p {
 		}
 	}
 	#packages {
+		.container {
+			.row {
+				.d-inline-flex {
+					display: block;
+				}
+			}
+		}
 		input.image-select[type="checkbox"] + label {
 			display: block;
 			width: 100%;
+			margin-bottom: 12px;
+		}
+		input.image-select[type="checkbox"] + label:hover {
+			transform: scale(100%);
+			filter: contrast(150%);
 		}
 		input.image-select[type="checkbox"]:checked + label {
 			padding-top: 6%;
@@ -1186,6 +1203,7 @@ p {
 		#testimonial {
 			.card {
 				width: 70%;
+				min-height: 172px;
 				transform: translateY(-160%);
 				.testimonial-text {
 					font-size: 16px;
