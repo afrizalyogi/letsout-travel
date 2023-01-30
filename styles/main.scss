@@ -12,6 +12,7 @@
 body {
 	font-family: "Poppins", sans-serif;
 	color: var(--black-primary);
+	min-width: 268px;
 }
 nav {
 	padding: 24px 0;
@@ -261,7 +262,12 @@ p {
 }
 #destinations {
 	#destinations-text {
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 60px;
+		.section-paragraph {
+			width: 35%;
+		}
 	}
 	#destinations-content {
 		.row {
@@ -711,9 +717,7 @@ p {
 			.col {
 				display: flex;
 				justify-content: flex-start;
-			}
-			.d-block {
-				.search-subtitle {
+				.d-inline-flex {
 					margin-bottom: 24px;
 				}
 			}
@@ -782,6 +786,9 @@ p {
 	#destinations {
 		#destinations-text {
 			margin-bottom: 48px;
+			.section-paragraph {
+				width: 60%;
+			}
 		}
 		#destinations-content {
 			.row {
@@ -953,8 +960,9 @@ p {
 	#destinations {
 		#destinations-text {
 			width: 80%;
-			margin-left: auto;
-			margin-right: auto;
+			.section-paragraph {
+				width: 90%;
+			}
 		}
 		#destinations-content {
 			.row {
@@ -996,7 +1004,7 @@ p {
 				margin-top: -48px;
 				margin-left: auto;
 				margin-right: auto;
-				transform: translate(0, -164%);
+				transform: translateY(-164%);
 				.testimonial-text {
 					font-size: 18px;
 				}
@@ -1013,4 +1021,205 @@ p {
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+	nav {
+		.navbar-brand {
+			font-size: 16px;
+			img {
+				height: 24px;
+			}
+		}
+		.navbar-toggler {
+			img {
+				height: 36px;
+			}
+		}
+	}
+	header,
+	section {
+		margin-bottom: 84px;
+	}
+	header {
+		padding-top: 84px;
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#header-text {
+			.header-title {
+				font-size: 32px;
+				line-height: 42px;
+			}
+			.header-title,
+			.header-subtitle {
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+		}
+		#header-img {
+			#header-img-object {
+				border-radius: 0;
+				height: 320px;
+			}
+		}
+	}
+	footer {
+		padding: 72px 24px;
+		.footer-brand {
+			a {
+				img {
+					height: 24px;
+					margin-right: 8px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+		.footer-link-title {
+			font-size: 16px;
+		}
+		.footer-link {
+			font-size: 14px;
+		}
+	}
+	p {
+		font-size: 12px;
+	}
+
+	// Style Id Sort (Begin-End)
+	#search {
+		padding: 6%;
+		margin-bottom: 84px;
+		#btn-search-1,
+		#btn-search-2 {
+			font-size: 14px;
+		}
+		#flight-content,
+		#hotel-content {
+			padding: 24px;
+			.d-block {
+				margin-left: 14px;
+				.search-title {
+					font-size: 14px;
+				}
+				.search-subtitle {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	#service {
+		.card {
+			padding: 0 6%;
+			#service-content {
+				.row {
+					.col {
+						.d-inline-flex {
+							display: block;
+							text-align: center;
+							.d-block {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+				.service-title {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	#packages {
+		input.image-select[type="checkbox"] + label {
+			display: block;
+			width: 100%;
+		}
+		input.image-select[type="checkbox"]:checked + label {
+			padding-top: 6%;
+			padding-bottom: 4%;
+			transform: scale(85%);
+		}
+		#packages-title {
+			.packages-detail-title {
+				font-size: 20px;
+			}
+			.d-inline-flex {
+				.btn-primary {
+					margin-bottom: 0;
+				}
+			}
+			.section-paragraph {
+				width: 80%;
+			}
+		}
+	}
+	#destinations {
+		.card {
+			.destination-text {
+				padding: 12px;
+			}
+			.destination-title {
+				font-size: 16px;
+			}
+			.destination-subtitle,
+			.destination-price {
+				font-size: 12px;
+			}
+		}
+	}
+	#cta {
+		#cta-card {
+			padding-top: 48px;
+			padding-bottom: 104px;
+			.section-title {
+				width: 100%;
+				line-height: 36px;
+			}
+			.section-paragraph {
+				font-size: 12px;
+				line-height: auto;
+				margin-bottom: 280px;
+				width: 80%;
+			}
+		}
+		#testimonial {
+			.card {
+				width: 70%;
+				transform: translateY(-160%);
+				.testimonial-text {
+					font-size: 16px;
+				}
+				.testimonial-name {
+					font-size: 16px;
+				}
+				.testimonial-job {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	// Reusable Style Component Sort (A-Z)
+	.btn {
+		padding: 12px 24px;
+		font-size: 14px;
+	}
+	.container {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.section-subtitle {
+		font-size: 12px;
+	}
+	.section-title {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 24px;
+	}
+	.section-paragraph {
+		width: 80%;
+		line-height: 20px;
+	}
 }
